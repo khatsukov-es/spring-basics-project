@@ -21,24 +21,24 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<profiles>
-		<profile>
-			<id>circleci</id>
-			<properties>
-				<!--suppress MavenModelInspection -->
-				<distribution.out.dir>${CIRCLE_ARTIFACTS}</distribution.out.dir>
-			</properties>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.eluder.coveralls</groupId>
-						<artifactId>coveralls-maven-plugin</artifactId>
-						<version>4.3.0</version>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+	<!--<profiles>-->
+		<!--<profile>-->
+			<!--<id>circleci</id>-->
+			<!--&lt;!&ndash;<properties>&ndash;&gt;-->
+				<!--&lt;!&ndash;&lt;!&ndash;suppress MavenModelInspection &ndash;&gt;&ndash;&gt;-->
+				<!--&lt;!&ndash;<distribution.out.dir>${CIRCLE_ARTIFACTS}</distribution.out.dir>&ndash;&gt;-->
+			<!--&lt;!&ndash;</properties>&ndash;&gt;-->
+			<!--<build>-->
+				<!--<plugins>-->
+					<!--<plugin>-->
+						<!--<groupId>org.eluder.coveralls</groupId>-->
+						<!--<artifactId>coveralls-maven-plugin</artifactId>-->
+						<!--<version>4.3.0</version>-->
+					<!--</plugin>-->
+				<!--</plugins>-->
+			<!--</build>-->
+		<!--</profile>-->
+	<!--</profiles>-->
 
 	<dependencies>
 		<dependency>
@@ -128,8 +128,4 @@
 		</plugins>
 	</build>
 
-	<issueManagement>
-		<url>https://github.com/yuriytkach/spring-basics-course-project</url>
-		<system>Github</system>
-	</issueManagement>
 </project>
